@@ -5,13 +5,11 @@ const Script = require('smooch-bot').Script;
 
 const scriptRules = require('./script.json');
 
-/*
 function filterWord(s) {
     var words = ['of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
     var re = new RegExp('\\b(' + words.join('|') + ')\\b', 'g');
     return (s || '').replace(re, '').replace(/[ ]{2,}/, ' ');
     }
-*/
 
 
 module.exports = new Script({
@@ -32,8 +30,8 @@ module.exports = new Script({
 
             let messageText = message.text.trim();
             let wordText = messageText.replace(/[\.,-\/#!$\?\"\'%\^&\*;:{}=\-_`~()]/gi, '');
-            //let filterText=filterWord(wordText);
-            let upperText = wordText.toUpperCase();
+            let filterText=filterWord(wordText);
+            let upperText = filterText.toUpperCase();
             
             function updateSilent() {
                 switch (upperText) {
