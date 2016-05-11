@@ -22,7 +22,7 @@ module.exports = new Script({
         receive: (bot, message) => {
 
             let messageText = message.text.trim();
-            let wordText = messageText.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/gi, '');
+            let wordText = messageText.replace(/[\.,-\/#!$\?\"\'%\^&\*;:{}=\-_`~()]/gi, '');
             let upperText = wordText.toUpperCase();
             
             function updateSilent() {
