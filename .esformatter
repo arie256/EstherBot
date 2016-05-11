@@ -328,7 +328,7 @@
         "indent_size": 4,
         "max_preserve_newlines": 2,
         "preserve_newlines": true
-        //wrap_line_length: 250
+        wrap_line_length: 250
       }
     }
 }
