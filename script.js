@@ -21,6 +21,7 @@ module.exports = new Script({
     speak: {
         receive: (bot, message) => {
 
+            let messageText = message.text.trim();
             let upperText = message.text.trim().toUpperCase();
 
             function updateSilent() {
@@ -44,7 +45,7 @@ module.exports = new Script({
                 }
 
                 if (!_.has(scriptRules, upperText)) {
-                    return bot.say(`Sorry, I don't understand "` + upperText + `".`).then(() => 'speak');
+                    return bot.say(`Sorry, I don't understand "` + messageText + `".`).then(() => 'speak');
                 }
 
                 var response = scriptRules[upperText];
