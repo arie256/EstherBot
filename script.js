@@ -28,14 +28,13 @@ module.exports = new Script({
             
             var badWords = ['of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
             var myWords = useText.split(' ');
-            /*
+            
             var newWords;
-            var x;
-            for (x in myWords) {
-                if (x == 'IS') { continue; }
-                newWords.push(x);
+            for (var i=0; i < mywords.length; i++) {
+            //    if (x == 'IS') { continue; }
+                newWords.push(newWords[i]);
                 }
-            */
+            
             
             let upperText = myWords.join(' ');
             //let upperText = useText;
