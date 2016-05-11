@@ -1,5 +1,5 @@
 {
-    "BOT": "I’m WedBot, a software automaton that knows lots of stuff about Arie and Liz's wedding!\nI only understand keywords--you could say 'ceremony', 'reception', anything like that.  Or just click: %[Tell me more!](postback:WEDDING)",
+    "BOT": "I’m WedBot, a software automaton that knows lots of stuff about Arie and Liz's wedding!\nI only understand keywords--you could say 'ceremony', 'reception', anything like that.  Or just click: %[Tell me more!](postback:wedding)",
     "HELLO": "Hello yourself!  I'm really glad to be talking to you.",
     "WEDDING" : "I am SO EXCITED about their wedding!  Or, you know, I would be, if I weren't a bot.\nThe wedding will be on August 21, 2016, at Congregation Beit Simchat Torah in New York.  What else can I tell you? %[Where is the synagogue?](postback:address) %[When is it?](postback:time) %[Tell me about the reception.](postback:reception)",
     "ADDRESS" : "The synagogue is at 130 West 30th Street, between 6th and 7th Avenues.  It's next to a police station!",
@@ -7,8 +7,8 @@
     "RECEPTION" : "The reception will be at Millesime, 92 Madison Avenue, between 28th and 29th.  It's about a ten minute walk.",
     "HELP" : "I'm WedBot, a bot with  lots of information about Liz and Arie's wedding!  %[Tell me more!](postback:wedding)",
     "ARIE" : "Now there's a frood who really knows where his towel is.",
-    "LIZ" : "I have computed that she is just the best ever, you know?  Just, A-1 top #1.",
-    "ELIZABETH" : "...I wouldn't call her that.  Not to her face.  Let's just stick with 'Liz'.",
+    "LIZ" : "I have computed that she is just the best ever, you know?  Just, excellently wonderful.",
+    "ELIZABETH" : "...Let's just stick with 'Liz'.",
     "ELVIS" : "Sorry, we were going to invite her, but she's dressed too formally!",
     "PISA" : "The other love of Arie's life.  Also the best cat in the universe.",
     "What should I wear?" : "I hear the bride and groom are going snazzy for the ceremony but semi-formal for the wedding.  How about a suit or cocktail dress?",
