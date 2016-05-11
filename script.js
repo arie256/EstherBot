@@ -30,8 +30,9 @@ module.exports = new Script({
             var myWords = useText.split(' ');
             
             var newWords = [];
+            var add = 1;
             for (var i=0; i < myWords.length; i++) {
-                var add = 1;
+                add = 1;
                 if (x == 'IS') { add = 0; }
                 
                 if (add == 1) { newWords.push(myWords[i]); }
