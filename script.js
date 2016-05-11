@@ -31,8 +31,10 @@ module.exports = new Script({
             
             var newWords = [];
             for (var i=0; i < myWords.length; i++) {
-                if (x == 'IS') { continue; }
-                newWords.push(myWords[i]);
+                var add = 1;
+                if (x == 'IS') { add = 0; }
+                
+                if (add == 1) { newWords.push(myWords[i]); }
                 }
             
             let upperText = myWords.join(' ');
