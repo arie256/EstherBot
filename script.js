@@ -29,10 +29,10 @@ module.exports = new Script({
             var badWords = ['of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
             var myWords = useText.split(' ');
             
-            var newWords;
-            for (var i=0; i < mywords.length; i++) {
+            var newWords = [];
+            for (var i=0; i < myWords.length; i++) {
             //    if (x == 'IS') { continue; }
-                newWords.push(newWords[i]);
+                newWords.push(myWords[i]);
                 }
             
             
