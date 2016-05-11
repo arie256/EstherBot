@@ -24,7 +24,7 @@ module.exports = new Script({
 
             let messageText = message.text.trim();
             let wordText = messageText.replace(/[\.,-\/#!$\?\"\'%\^&\*;:{}=\-_`~()]/gi, '');
-            let useText = wordText.toUpperCase();
+            let upperText = wordText.toUpperCase();
             
             //var words = ['of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
            // var words = useText.split(' ');
@@ -36,7 +36,7 @@ module.exports = new Script({
               //  }
             
             //let upperText = newwords.join(' ');
-            let upperText = useText;
+            //let upperText = useText;
             
             function updateSilent() {
                 switch (upperText) {
@@ -59,7 +59,7 @@ module.exports = new Script({
                 }
 
                 if (!_.has(scriptRules, upperText)) {
-                    return bot.say('Oof, sorry, I do not understand "' + wordlist + '".').then(() => 'speak');
+                    return bot.say('Oof, sorry, I do not understand "' + upperText + '".').then(() => 'speak');
                 }
 
                 var response = scriptRules[upperText];
