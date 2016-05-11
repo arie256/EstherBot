@@ -29,7 +29,7 @@ module.exports = new Script({
             
             var badWords = ['of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
             
-            var newWords;
+            var newWords = [];
             var add = 1;
             for (var i=0; i < myWords.length; i++) {
                 add = 1;
@@ -39,7 +39,7 @@ module.exports = new Script({
                 //if (add == 1) { newWords.push(myWords[i]); }
                 }
             
-            let upperText = badWords.join(' ');
+            let upperText = newWords.join(' ');
             
             function updateSilent() {
                 switch (upperText) {
