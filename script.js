@@ -26,10 +26,10 @@ module.exports = new Script({
             let wordText = messageText.replace(/[\.,-\/#!$\?\"\'%\^&\*;:{}=\-_`~()]/gi, '');
             
             var words = ['of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
-            var re = new RegExp('\\b(' + words.join('|') + ')\\b', 'g');
-            let filterText = wordText.replace(re, '').replace(/[ ]{2,}/, ' ');
-            
-            let upperText = filterText.toUpperCase();
+            //var re = new RegExp('\\b(' + words.join('|') + ')\\b', 'g');
+            //let filterText = wordText.replace(re, '').replace(/[ ]{2,}/, ' ');
+            //let upperText = filterText.toUpperCase();
+            let upperText = wordText.toUpperCase();
             
             function updateSilent() {
                 switch (upperText) {
