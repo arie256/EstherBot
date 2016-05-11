@@ -5,12 +5,6 @@ const Script = require('smooch-bot').Script;
 
 const scriptRules = require('./script.json');
 
-function filterWord(s) {
-    var words = ['of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
-    var re = new RegExp('\\b(' + words.join('|') + ')\\b', 'g');
-    return (s || '').replace(re, '').replace(/[ ]{2,}/, ' ');
-    }
-
 
 module.exports = new Script({
     processing: {
@@ -30,8 +24,12 @@ module.exports = new Script({
 
             let messageText = message.text.trim();
             let wordText = messageText.replace(/[\.,-\/#!$\?\"\'%\^&\*;:{}=\-_`~()]/gi, '');
-            //let filterText=filterWord(wordText);
-            let upperText = wordText.toUpperCase();
+            
+            var words = ['of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
+            var re = new RegExp('\\b(' + words.join('|') + ')\\b', 'g');
+            let filterText = wordText.replace(re, '').replace(/[ ]{2,}/, ' ');
+            
+            let upperText = filterText.toUpperCase();
             
             function updateSilent() {
                 switch (upperText) {
@@ -47,7 +45,7 @@ module.exports = new Script({
             function getSilent() {
                 return bot.getProp("silent");
             }
-
+            
             function processMessage(isSilent) {
                 if (isSilent) {
                     return Promise.resolve("speak");
