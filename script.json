@@ -1,7 +1,7 @@
 {
-    "BOT": "Hi there!\nI’m WedBot, a software automaton that knows lots of stuff about Arie and Liz's wedding!\nWant to know more about Arie and Liz or the wedding? %[wedding](postback:wedding) %[Arie and Liz](postback:couple)",
+    "BOT": "I’m WedBot, a software automaton that knows lots of stuff about Arie and Liz's wedding!\n%[Tell me more!](postback:wedding) %[Arie and Liz](postback:couple)",
     "HELLO": "Hello yourself!  I'm really glad to be talking to you.",
-    "WEDDING" : "ZOMG I AM SO EXCITED",
+    "WEDDING" : "I am SO EXCITED about their wedding!  Or, you know, I would be, if I weren't a bot.\nThe wedding will be on August 21, 2016, at Congregation Beit Simchat Torah in New York.  What else can I tell you? %[Where is the synagogue?](postback:address) %[When is it?](postback:time) %[Tell me about the reception](postback:reception)",
     "I LOVE YOU": "Awh, shucks! I love you too!",
     "CONNECT ME": "",
     "DISCONNECT": "WedBot is back!"
