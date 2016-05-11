@@ -26,10 +26,14 @@ module.exports = new Script({
             let wordText = messageText.replace(/[\.,-\/#!$\?\"\'%\^&\*;:{}=\-_`~()]/gi, '');
             
             var words = ['of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
-            var re = new RegExp('\\b(' + words.join('|') + ')\\b', 'g');
+            let wordlist = words.join('|');
+            
+            var newText = wordText.replace(/\bwordlist\b/gi);
+            
+            //var re = new RegExp('\\b(' + wordlist + ')\\b', 'g');
             //let filterText = wordText.replace(re, '').replace(/[ ]{2,}/, ' ');
             //let upperText = filterText.toUpperCase();
-            let upperText = wordText.toUpperCase();
+            let upperText = newText.toUpperCase();
             
             function updateSilent() {
                 switch (upperText) {
@@ -52,7 +56,7 @@ module.exports = new Script({
                 }
 
                 if (!_.has(scriptRules, upperText)) {
-                    return bot.say('Sorry, I do not understand "' + upperText + '".').then(() => 'speak');
+                    return bot.say('Oh, sorry, I do not understand "' + upperText + '".').then(() => 'speak');
                 }
 
                 var response = scriptRules[upperText];
