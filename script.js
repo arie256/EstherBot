@@ -27,15 +27,15 @@ module.exports = new Script({
             let useText = wordText.toUpperCase();
             
             //var words = ['of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
-            var words = useText.split(" ");
+            var words = useText.split(' ');
             var newwords;
             var x;
             for (x in words) {
-                if (x == 'is') { continue; }
+                //if (x == 'IS') { continue; }
                 newwords.push(x);
                 }
             
-            let upperText = newwords.join('|');
+            let upperText = newwords.join(' ');
             
             function updateSilent() {
                 switch (upperText) {
