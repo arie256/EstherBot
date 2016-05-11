@@ -1,5 +1,5 @@
 {
-    "BOT": "Hi there!\nI’m WedBot, a software automaton that knows lots of stuff about Arie and Liz's wedding!\nWant to know more about Arie and Liz or the wedding? %[wedding](postback:wedding) %[Arie and Liz](postback:arie and liz)",
+    "BOT": "Hi there!\nI’m WedBot, a software automaton that knows lots of stuff about Arie and Liz's wedding!\nWant to know more about Arie and Liz or the wedding? %[wedding](postback:wedding) %[Arie and Liz](postback:arie and liz)\n",
     "HELLO": "Hello yourself!  I'm really glad to be talking to you.",
     "WEDDING" : "ZOMG I AM SO EXCITED",
     "I LOVE YOU": "Awh, shucks! I love you too!",
