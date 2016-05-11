@@ -28,7 +28,7 @@ module.exports = new Script({
             var words = ['of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
             let wordlist = words.join('|');
             
-            var newText = wordText.replace(/\bwordlist\b/gi);
+            var newText = wordText.replace('/\b' + wordlist + '\b/gi');
             
             //var re = new RegExp('\\b(' + wordlist + ')\\b', 'g');
             //let filterText = wordText.replace(re, '').replace(/[ ]{2,}/, ' ');
@@ -56,7 +56,7 @@ module.exports = new Script({
                 }
 
                 if (!_.has(scriptRules, upperText)) {
-                    return bot.say('Oh, sorry, I do not understand "' + upperText + '".').then(() => 'speak');
+                    return bot.say('Sorry, I do not understand "' + upperText + '".').then(() => 'speak');
                 }
 
                 var response = scriptRules[upperText];
