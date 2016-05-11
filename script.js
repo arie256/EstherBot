@@ -31,13 +31,11 @@ module.exports = new Script({
             
             var newWords = [];
             for (var i=0; i < myWords.length; i++) {
-            //    if (x == 'IS') { continue; }
+                if (x == 'IS') { continue; }
                 newWords.push(myWords[i]);
                 }
             
-            
             let upperText = myWords.join(' ');
-            //let upperText = useText;
             
             function updateSilent() {
                 switch (upperText) {
