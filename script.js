@@ -26,16 +26,16 @@ module.exports = new Script({
             let wordText = messageText.replace(/[\.,-\/#!$\?\"\'%\^&\*;:{}=\-_`~()]/gi, '');
             let useText = wordText.toUpperCase();
             
-            var words = ['of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
-            var words = useText.split(' ');
-            var newwords;
+            var badWords = ['of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
+            var myWords = useText.split(' ');
+            var newWords;
             var x;
-            for (x in words) {
+            for (x in myWords) {
                 if (x == 'IS') { continue; }
-                newwords.push(x);
+                newWords.push(x);
                 }
             
-            let upperText = newwords.join(' ');
+            let upperText = newWords.join(' ');
             //let upperText = useText;
             
             function updateSilent() {
