@@ -35,7 +35,7 @@ module.exports = new Script({
                 add = 1;
                 //if (myWords[i] == 'IS') { add = 0; }
                 
-                //newWords.push(myWords[i]);
+                newWords.push(myWords[i]);
                 //if (add == 1) { newWords.push(myWords[i]); }
                 }
             
