@@ -22,9 +22,9 @@ module.exports = new Script({
         receive: (bot, message) => {
 
             let messageText = message.text.trim();
-            let upperText = message.text.trim().toUpperCase();
-            let upperText = upperText.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/gi, '');
-
+            let wordText = messageText.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/gi, '');
+            let upperText = wordText.toUpperCase();
+            
             function updateSilent() {
                 switch (upperText) {
                     case "CONNECT ME":
