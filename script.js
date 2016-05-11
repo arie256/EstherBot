@@ -35,7 +35,8 @@ module.exports = new Script({
                 newwords.push(x);
                 }
             
-            let upperText = newwords.join(' ');
+            //let upperText = newwords.join(' ');
+            let upperText = useText;
             
             function updateSilent() {
                 switch (upperText) {
