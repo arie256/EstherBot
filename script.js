@@ -27,15 +27,18 @@ module.exports = new Script({
             let useText = wordText.toUpperCase();
             let myWords = useText.split(' ');
             
-            var badWords = ['of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
+            var badWords = ['IS', 'OF', 'THE', 'IN', 'ON'];
+            //'of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
             
             var newWords = [];
             var add = 1;
             for (var i=0; i < myWords.length; i++) {
                 add = 1;
-                if (myWords[i] == 'IS') { add = 0; }
                 
-                //newWords.push(myWords[i]);
+                for (var j=0; j < badWords.length; j++) {
+                    if (myWords[i] == badWords[j]) { add = 0; }
+                    }
+                
                 if (add == 1) { newWords.push(myWords[i]); }
                 }
             
