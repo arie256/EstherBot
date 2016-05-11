@@ -24,18 +24,18 @@ module.exports = new Script({
 
             let messageText = message.text.trim();
             let wordText = messageText.replace(/[\.,-\/#!$\?\"\'%\^&\*;:{}=\-_`~()]/gi, '');
-            let upperText = wordText.toUpperCase();
+            let useText = wordText.toUpperCase();
             
-            //var words = ['of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
-           // var words = useText.split(' ');
+            var words = ['of', 'the', 'in', 'on', 'at', 'to', 'a', 'is'];
+            var words = useText.split(' ');
             var newwords;
             var x;
-            //for (x in words) {
-                //if (x == 'IS') { continue; }
-             //   newwords.push(x);
-              //  }
+            for (x in words) {
+                if (x == 'IS') { continue; }
+                newwords.push(x);
+                }
             
-            //let upperText = newwords.join(' ');
+            let upperText = newwords.join(' ');
             //let upperText = useText;
             
             function updateSilent() {
