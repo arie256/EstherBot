@@ -30,8 +30,8 @@ module.exports = new Script({
 
             let messageText = message.text.trim();
             let wordText = messageText.replace(/[\.,-\/#!$\?\"\'%\^&\*;:{}=\-_`~()]/gi, '');
-            let filterText=filterWord(wordText);
-            let upperText = filterText.toUpperCase();
+            //let filterText=filterWord(wordText);
+            let upperText = wordText.toUpperCase();
             
             function updateSilent() {
                 switch (upperText) {
