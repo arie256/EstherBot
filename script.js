@@ -35,10 +35,10 @@ module.exports = new Script({
                 add = 1;
                 if (myWords[i] == 'IS') { add = 0; }
                 
-                //if (add == 1) { newWords.push(myWords[i]); }
+                if (add == 1) { newWords.push(myWords[i]); }
                 }
             
-            let upperText = myWords.join(' ');
+            let upperText = newWords.join(' ');
             
             function updateSilent() {
                 switch (upperText) {
