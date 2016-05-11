@@ -23,6 +23,7 @@ module.exports = new Script({
 
             let messageText = message.text.trim();
             let upperText = message.text.trim().toUpperCase();
+            let upperText = upperText.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/gi, '');
 
             function updateSilent() {
                 switch (upperText) {
