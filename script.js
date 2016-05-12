@@ -29,15 +29,18 @@ module.exports = new Script({
             
             var badWords = ['IS', 'OF', 'THE', 'IN', 'ON', 'AT', 'A', 'AN', 'TELL', 'ME', 'ABOUT', 'SAY', 'WHO',
                 'CAN', 'HOW', 'WHAT', 'I', 'AM', 'SHOULD', 'WHATS', 'UP', 'WITH', 'WILL', 'BE', 'THERE',
-                'WHERE', 'SERVE', 'THIS', 'DO', 'REALLY'];
+                'WHERE', 'SERVE', 'THIS', 'DO', 'REALLY', 'DID', 'HE', 'SHE', 'TO', 'HIM', 'HER'];
             
             var newWords = [];
             var add = 1;
             for (var i=0; i < myWords.length; i++) {
                 add = 1;
                 
-                for (var j=0; j < badWords.length; j++) {
-                    if (myWords[i] == badWords[j]) { add = 0; }
+                CHECKWORD: for (var j=0; j < badWords.length; j++) {
+                    if (myWords[i] == badWords[j]) {
+                            add = 0;
+                            break CHECKWORD;    
+                        }
                     }
                 
                 if (add == 1) { newWords.push(myWords[i]); }
