@@ -27,7 +27,9 @@ module.exports = new Script({
             let useText = wordText.toUpperCase();
             let myWords = useText.split(' ');
             
-            var badWords = ['IS', 'OF', 'THE', 'IN', 'ON', 'AT', 'A', 'TELL', 'ME', 'ABOUT', 'SAY', 'WHO', 'CAN', 'HOW', 'WHAT', 'I', 'AM', 'SHOULD', 'WHATS', 'UP', 'WITH', 'WILL', 'BE', 'THERE'];
+            var badWords = ['IS', 'OF', 'THE', 'IN', 'ON', 'AT', 'A', 'AN', 'TELL', 'ME', 'ABOUT', 'SAY', 'WHO',
+                'CAN', 'HOW', 'WHAT', 'I', 'AM', 'SHOULD', 'WHATS', 'UP', 'WITH', 'WILL', 'BE', 'THERE',
+                'WHERE', 'SERVE', 'THIS', 'DO'];
             
             var newWords = [];
             var add = 1;
