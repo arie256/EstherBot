@@ -7,9 +7,9 @@
     "CEREMONY" : "Liz and Arie will be married at Congregation Beit Simchat Torah, 130 West 30th Street, between 6th and 7th Avenues.  It's next to a police station!",
     "WHEN CEREMONY" : "They're not sure yet!  They think it'll start at 4pm.  But ask me again later!",
     "WHEN RECEPTION" : "Right after the ceremony, of course!",
-    "RSVP" : "Don't tell me--I'm just a bot!  You can RSVP on their wedding website.  %[liz.and.arie.org](http://liz.and.arie.org)"
-    "REGISTERED" : "You can find their registry information on their wedding website.  %[liz.and.arie.org](http://liz.and.arie.org)"
-    "REGISTRY" : "You can find their registry information on their wedding website.  %[liz.and.arie.org](http://liz.and.arie.org)"
+    "RSVP" : "Don't tell me--I'm just a bot!  You can RSVP on their wedding website.  %[liz.and.arie.org](http://liz.and.arie.org)",
+    "REGISTERED" : "You can find their registry information on their wedding website.  %[liz.and.arie.org](http://liz.and.arie.org)",
+    "REGISTRY" : "You can find their registry information on their wedding website.  %[liz.and.arie.org](http://liz.and.arie.org)",
     "BACHELOR PARTY" : "Oh, I'm not supposed to talk about that.",
     "BACHELORETTE PARTY" : "Beats me!",
     "WHEN BACHELOR PARTY" : "I don't think there is one.",
