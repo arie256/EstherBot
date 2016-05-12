@@ -14,7 +14,7 @@ module.exports = new Script({
 
     start: {
         receive: (bot) => {
-            return bot.say('Let\'s chat about Liz and Arie\'s wedding!  Say HELLO to get started.')
+            return bot.say("Let's chat about Liz and Arie's wedding!  Say HELLO or ask me a question to get started.")
                 .then(() => 'speak');
         }
     },
@@ -23,9 +23,9 @@ module.exports = new Script({
         receive: (bot, message) => {
 
             let messageText = message.text.trim();
-            let wordText = messageText.replace(/[^a-zA-Z ]/g, ''); // \.,-\/#!$\?\"\'%\^&\*;:{}=\-_`~()]
-            let useText = wordText.toUpperCase();
-            let myWords = useText.split(' ');
+            let useText = messageText.toUpperCase();
+            let wordText = useText.replace(/[^A-Z ]/g, ''); // \.,-\/#!$\?\"\'%\^&\*;:{}=\-_`~()]
+            let myWords = wordText.split(' ');
             
             var badWords = ['IS', 'OF', 'THE', 'IN', 'ON', 'AT', 'A', 'AN', 'TELL', 'ME', 'ABOUT', 'SAY', 'WHO',
                 'CAN', 'HOW', 'WHAT', 'I', 'AM', 'SHOULD', 'WHATS', 'UP', 'WITH', 'WILL', 'BE', 'THERE',
@@ -66,8 +66,8 @@ module.exports = new Script({
                 }
 
                 if (!_.has(scriptRules, upperText)) {
-                    //return bot.say('Sorry, I do not understand "' + messageText + '".').then(() => 'speak');
-                    return bot.say('Sorry, I do not understand "' + upperText + '".').then(() => 'speak');
+                    return bot.say('Sorry, I do not understand "' + messageText + '".').then(() => 'speak');
+                    //return bot.say('Sorry, I do not understand "' + upperText + '".').then(() => 'speak');
                 }
 
                 var response = scriptRules[upperText];
