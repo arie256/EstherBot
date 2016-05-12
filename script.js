@@ -23,13 +23,13 @@ module.exports = new Script({
         receive: (bot, message) => {
 
             let messageText = message.text.trim();
-            let wordText = messageText.replace(/[\.,-\/#!$\?\"\'%\^&\*;:{}=\-_`~()]/gi, '');
+            let wordText = messageText.replace(/[^a-zA-Z]/gi, ''); // \.,-\/#!$\?\"\'%\^&\*;:{}=\-_`~()]
             let useText = wordText.toUpperCase();
             let myWords = useText.split(' ');
             
             var badWords = ['IS', 'OF', 'THE', 'IN', 'ON', 'AT', 'A', 'AN', 'TELL', 'ME', 'ABOUT', 'SAY', 'WHO',
                 'CAN', 'HOW', 'WHAT', 'I', 'AM', 'SHOULD', 'WHATS', 'UP', 'WITH', 'WILL', 'BE', 'THERE',
-                'WHERE', 'SERVE', 'THIS', 'DO'];
+                'WHERE', 'SERVE', 'THIS', 'DO', 'REALLY'];
             
             var newWords = [];
             var add = 1;
