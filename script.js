@@ -23,7 +23,7 @@ module.exports = new Script({
         receive: (bot, message) => {
 
             let messageText = message.text.trim();
-            let wordText = messageText.replace(/\W/g, ' '); // \.,-\/#!$\?\"\'%\^&\*;:{}=\-_`~()]
+            let wordText = messageText.replace(/[^a-zA-Z ]/g, ''); // \.,-\/#!$\?\"\'%\^&\*;:{}=\-_`~()]
             let useText = wordText.toUpperCase();
             let myWords = useText.split(' ');
             
