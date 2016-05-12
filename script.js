@@ -66,8 +66,8 @@ module.exports = new Script({
                 }
 
                 if (!_.has(scriptRules, upperText)) {
-                    return bot.say('Sorry, I do not understand "' + messageText + '".').then(() => 'speak');
-                    //return bot.say('Sorry, I do not understand "' + upperText + '".').then(() => 'speak');
+                    //return bot.say('Sorry, I do not understand "' + messageText + '".').then(() => 'speak');
+                    return bot.say('Sorry, I do not understand "' + upperText + '".').then(() => 'speak');
                 }
 
                 var response = scriptRules[upperText];
