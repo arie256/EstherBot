@@ -29,7 +29,8 @@ module.exports = new Script({
             
             var badWords = ['IS', 'OF', 'THE', 'IN', 'ON', 'AT', 'A', 'AN', 'TELL', 'ME', 'ABOUT', 'SAY', 'WHO',
                 'CAN', 'HOW', 'WHAT', 'I', 'AM', 'SHOULD', 'WHATS', 'UP', 'WITH', 'WILL', 'BE', 'THERE',
-                'WHERE', 'SERVE', 'THIS', 'DO', 'REALLY', 'DID', 'HE', 'SHE', 'TO', 'HIM', 'HER', 'OK', 'BUT'];
+                'WHERE', 'SERVE', 'THIS', 'DO', 'REALLY', 'DID', 'HE', 'SHE', 'TO', 'HIM', 'HER', 'OK', 'BUT',
+                'ARE', 'THEY'];
             
             var newWords = [];
             var add;
