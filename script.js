@@ -24,7 +24,7 @@ module.exports = new Script({
 
             let messageText = message.text.trim();
             let useText = messageText.toUpperCase();
-            let wordText = useText.replace(/[^A-Z ]/g, ''); // \.,-\/#!$\?\"\'%\^&\*;:{}=\-_`~()]
+            let wordText = useText.replace(/[^A-Z ]/g, '');
             let myWords = wordText.split(' ');
             
             var badWords = ['IS', 'OF', 'THE', 'IN', 'ON', 'AT', 'A', 'AN', 'TELL', 'ME', 'ABOUT', 'SAY', 'WHO',
