@@ -14,7 +14,7 @@ module.exports = new Script({
 
     start: {
         receive: (bot) => {
-            return bot.say("Let's chat about Liz and Arie's wedding!  Say HELLO or ask me a question to get started.")
+            return bot.say("Let's chat about Liz and Arie's wedding!  Ask me a question to get started.")
                 .then(() => 'speak');
         }
     },
@@ -29,7 +29,7 @@ module.exports = new Script({
             
             var badWords = ['IS', 'OF', 'THE', 'IN', 'ON', 'AT', 'A', 'AN', 'TELL', 'ME', 'ABOUT', 'SAY', 'WHO',
                 'CAN', 'HOW', 'WHAT', 'I', 'AM', 'SHOULD', 'WHATS', 'UP', 'WITH', 'WILL', 'BE', 'THERE',
-                'WHERE', 'SERVE', 'THIS', 'DO', 'REALLY', 'DID', 'HE', 'SHE', 'TO', 'HIM', 'HER', 'OK', 'BUT',
+                'SERVE', 'THIS', 'DO', 'REALLY', 'DID', 'HE', 'SHE', 'TO', 'HIM', 'HER', 'OK', 'BUT',
                 'ARE', 'THEY', 'SO'];
             
             var newWords = [];
